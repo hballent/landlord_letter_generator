@@ -40,7 +40,6 @@ hf_client = InferenceClient(provider="hf-inference", api_key=HF_TOKEN)
 
 
 def prompt_from(req: LetterRequest) -> str:
-    #todo: improve prompt
     return (
         f"Compose a polite German landlord letter using the following structure.\n\n"
         f"Berlin, den {req.issueDate}\n\n"
